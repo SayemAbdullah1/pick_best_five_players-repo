@@ -1,5 +1,7 @@
 document.getElementById('calculate').addEventListener('click', function(){
     const PlayerBudgetInput = getInputFieldValueById('per-player');
+
+
     setTextElementById('player-expense', PlayerBudgetInput);
 })
 
@@ -11,6 +13,7 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     const couchBudget = getInputFieldValueById('couch-input');
 
     const totaloutputBudget = perplayerBudget + managerBudget + couchBudget;
+    console.log(totaloutputBudget)
     
     setTextElementById('total-output', totaloutputBudget);
 })

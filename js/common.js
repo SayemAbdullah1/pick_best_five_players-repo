@@ -17,3 +17,6 @@ function setTextElementById(OutputId, newElement){
     const textElement = document.getElementById(OutputId);
     textElement.innerText = newElement;
 }
+function disableBtn() {
+    document.getElementById("btn-submit").disabled = true;
+}
