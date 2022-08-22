@@ -1,12 +1,14 @@
 const player = [];
 
-// products-player
+
 
 function displayPlayername() {
 
 
     const playerContainer = document.getElementById("total-players");
     playerContainer.textContent = '';
+   
+
 
     for (let i = 0; i < player.length; i++) {
         if(i>4){
@@ -24,6 +26,8 @@ function displayPlayername() {
   
 }
 
+
+
 function addToplayer(element) {
     const plName = element.parentNode.parentNode.parentNode.children[0].innerText;
 
@@ -32,7 +36,10 @@ function addToplayer(element) {
     }
 
     player.push(pl);
+    
 
     displayPlayername();
+
 }
+
 
